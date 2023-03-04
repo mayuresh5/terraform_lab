@@ -7,7 +7,7 @@ pipeline{
         
         stage('git checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/mayuresh5/terraform_lab.git/main.tf'
+                git branch: 'main', url: 'https://github.com/mayuresh5/terraform_lab.git'
             }
         }
         stage('terraform init'){
